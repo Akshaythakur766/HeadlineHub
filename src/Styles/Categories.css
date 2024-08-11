@@ -1,0 +1,37 @@
+.news-custom {
+    background-color: #f8f9fa;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 10px silver;
+    margin: 1rem; 
+    padding: 1rem;
+    height: auto; 
+    width: 80%; 
+    max-width: 70rem;
+    box-sizing: border-box; 
+}
+
+.image-custom {
+    width: 90%; 
+    height: 30rem ; 
+    max-width: 50rem; 
+    margin:1rem
+}
+.cat-image-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .news-custom {
+        margin: 1rem; /* Reduced margin for smaller screens */
+        padding: 1rem; /* Reduced padding for smaller screens */
+        width: auto; /* Allow the width to adjust to the container */
+        height: auto; /* Allow the height to adjust to the content */
+    }
+
+    .image-custom {
+        max-width: 100%; /* Ensure image does not exceed container width */
+        height: auto; /* Maintain aspect ratio on smaller screens */
+    }
+}

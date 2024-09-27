@@ -11,6 +11,8 @@ const Categories = ({ category }) => {
     async function fetchData() {
         setloading(true)
         try {
+
+            
             const apikey=import.meta.env.VITE_APP_NEWS_API_KEY;
             const response = await axios.get(`https://newsapi.org/v2/everything?q=${category}&sources=the-hindu,the-times-of-india,ndtv&from=2024-07-09&sortBy=publishedAt&apiKey=${apikey}`);
 
